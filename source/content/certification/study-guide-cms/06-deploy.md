@@ -56,9 +56,9 @@ Every Pantheon site comes with three permanent environments: Dev, Test, and Live
 
  1. **Commit Code in Dev:** Code is writable in the Dev (or a Multidev) environment. In Test and Live, only the git-based deployment pipeline has permission to change code. This is intentional, and supports the WebOps workflow model we've described. Update code in the Dev environment via SFTP or Git.
 
- 1. **Sync Content from Live to Test:** At this point, you will be prompted to clone your content down from the Live environment. This combines the code from Dev and the database and files from Live in the Test environment. It is a WebOps best practice to simulate your eventual deployment to Live as closely as possible. Under the hood, each deployment generates a Git tag.
-
  1. **Deploy Code from Dev to Test:** When you're ready to test a new set of changes, deploy your code from Dev to Test.
+
+ 1. **Sync Content from Live to Test:** At this point, you will be prompted to clone your content down from the Live environment. This combines the code from Dev and the database and files from Live in the Test environment. It is a WebOps best practice to simulate your eventual deployment to Live as closely as possible. Under the hood, each deployment generates a Git tag.
 
  1. **Evaluate Code Changes Against Synced Content:** In the Test environment, Developer and stakeholders evaluate code changes from Dev against content synced from Live. Each environment has a shareable URL to gather additional stakeholder feedback prior to pushing to Live.
 
